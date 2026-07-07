@@ -3,7 +3,8 @@ description: >-
   Things I hope you find, and things I hope you know.
 author: Your Name
 url: "" # e.g. https://yourusername.github.io — leave blank until you know it
-baseurl: "" # e.g. /writing-blog if not using a custom domain or user/org root repo
+baseurl: "/XiuShen"
+url: "https://nichkt.github.io"
 
 permalink: /:title/
 
