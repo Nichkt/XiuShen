@@ -1,0 +1,29 @@
+title: Notes for Later
+description: >-
+  Things I hope you find, and things I hope you know.
+author: Your Name
+url: "" # e.g. https://yourusername.github.io — leave blank until you know it
+baseurl: "" # e.g. /writing-blog if not using a custom domain or user/org root repo
+
+permalink: /:title/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

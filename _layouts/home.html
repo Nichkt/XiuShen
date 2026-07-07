@@ -1,0 +1,26 @@
+---
+layout: default
+---
+{% if content and content != "" %}
+<div class="intro">{{ content }}</div>
+{% endif %}
+
+{% assign posts = site.posts %}
+{% if posts.size > 0 %}
+<ul class="note-list">
+  {% for post in posts %}
+  <li class="note">
+    <div class="note-meta">
+      <span class="seal{% if forloop.first %} seal--filled{% endif %}"></span>
+      <span class="note-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </div>
+    <div>
+      <h2 class="note-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {% if post.excerpt %}<p class="note-excerpt">{{ post.excerpt | strip_html | truncatewords: 32 }}</p>{% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<div class="empty-state">Nothing written yet. Add a file to <code>_posts/</code> to start.</div>
+{% endif %}
