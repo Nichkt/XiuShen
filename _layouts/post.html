@@ -17,6 +17,41 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.previous or page.next %}
+  <nav class="post-pagination">
+    {% if page.previous %}
+    <a class="pagination-prev" href="{{ page.previous.url | relative_url }}">&larr; {{ page.previous.title }}</a>
+    {% else %}
+    <span></span>
+    {% endif %}
+    {% if page.next %}
+    <a class="pagination-next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} &rarr;</a>
+    {% endif %}
+  </nav>
+  {% endif %}
+
+  <footer class="post-footer">
+    <a href="{{ '/' | relative_url }}">&larr; Back to all notes</a>
+  </footer>
+</article>---
+layout: default
+---
+<article>
+  <header class="post-header">
+    <p class="post-meta">
+      <span class="seal"></span>
+      <span>{{ page.date | date: "%B %-d, %Y" }}</span>
+      <span>&middot;</span>
+      <span>{{ page.content | strip_html | number_of_words | divided_by: 200 | at_least: 1 }} min read</span>
+    </p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
   <footer class="post-footer">
     <a href="{{ '/' | relative_url }}">&larr; Back to all notes</a>
   </footer>
