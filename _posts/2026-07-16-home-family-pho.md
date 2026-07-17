@@ -4,6 +4,8 @@ subtitle: "Pre-recipe considerations, then Recipe, then story"
 ---
 This is how we make Pho at home
 
+[Skip to recipe →](#recipe)
+
 ## Pre-recipe considerations
 
 ### Picking the beef
@@ -88,7 +90,7 @@ Pick older ginger if possible. It has more flavor. You aren't candying this — 
 
 Don't bother if you have only a small pot. Have at least 6 quarts.
 
-## Recipe
+## Recipe {#recipe}
 
 ### Ingredients
 
