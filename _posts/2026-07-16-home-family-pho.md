@@ -1,7 +1,9 @@
 ---
 title: "Home Family Pho"
-subtitle: "Recipe first, then story"
+subtitle: "Pre-recipe considerations, then Recipe, then story"
 ---
+This is how we make Pho at home
+
 ## Pre-recipe considerations
 
 ### Picking the beef
